@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma nota centralizada</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        section {
+            position: relative;
+            background-color: black;
+            background-image: url(imagens/wallpaper001.jpg);
+            height: 97vh;
+            padding: 10px;
+        }
+
+        #nota {
+            position: absolute;
+            background-color: #F8E78B;
+            box-shadow: -5px 6px 13px rgba(0, 0, 0, 0.452);
+            height:300px;
+            width: 300px;
+            
+            left: 50%; /* left e top centraliza no meio */
+            top: 50%;
+            
+            transform: translate(-50%, -50%); /* transladar para ficar no meio certinho */
+        }
+
+        #nota > p {
+            font-size: 2em;
+            text-align: center;
+            padding-top: 106px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article id="nota"> 
+            <p>Uma nota centralizada meu &#x1F979</p>
+        </article>
+    </section>
+</body>
+</html>
