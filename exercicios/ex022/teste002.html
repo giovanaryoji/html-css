@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens que se repetem</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        main {
+            max-width: 1000px;            
+            min-width: 800px;
+            background-color: white;
+            margin: auto;
+            padding: 20px;
+            border-radius: 0px 20px;
+            box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.377);
+        }
+
+        .square {
+            width: 500px;
+            height: 100px;
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: lightcyan;
+            box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.349);
+        }
+
+        #q1 {
+            background-image: url(imagens/emoji01.png);
+        }
+
+        #q2 {
+            background-image: url(imagens/emoji01.png);
+            background-repeat: no-repeat;
+        }
+
+        #q3 {
+            background-image: url(imagens/emoji01.png);
+            background-repeat: repeat-x;
+        }
+
+        #q4 {
+            background-image: url(imagens/emoji01.png);
+            background-repeat: repeat-y;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Imagens que se repetem</h1>
+        <h2>Reapet</h2>
+        <div class="square" id="q1"></div>
+        <h2>No-reapet</h2>
+        <div class="square" id="q2"></div>
+        <h2>Reapet-x</h2>
+        <div class="square" id="q3"></div>
+        <h2>Reapet-y</h2>
+        <div class="square" id="q4"></div>
+    </main>
+</body>
+</html>
