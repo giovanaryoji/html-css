@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamanho da imagem</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black; /* Ideal colocar uma cor no fundo por causa do carregamento do conteúdo e da img de fundo */
+           /*  background-color: black; /* Ideal colocar uma cor no fundo por causa do carregamento do conteúdo e da img de fundo */
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover; /* contain: Mostra a img 100% exibida sem corte */
             /* cover: cobre a tela inteira */
+            background-attachment: fixed; */ /* scroll: rola */
+            /* fixed: fixa a tela do fundo */
+
+            /* Shorthand blackground
+            color > image > position > reapet > (size) > attachment */
+
+            /* (size) dá erro, então coloca por fora */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             background-color: white;
             margin: auto;
@@ -29,6 +39,18 @@
     <main>
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id laudantium quidem nesciunt iusto, illum fuga unde modi hic tempore velit et aperiam veritatis dolor non saepe facere optio repellendus sapiente?Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque temporibus, voluptates doloremque corporis dignissimos molestias mollitia error ea, iste illum voluptate vitae at. Nihil, iure vero. Velit beatae a laboriosam!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aperiam nam voluptatum, molestias quidem atque suscipit, vel exercitationem quia id numquam neque praesentium et, quod ex est earum voluptatibus illo!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quae quaerat libero hic adipisci harum deserunt cumque corporis soluta dignissimos quod corrupti nam eaque accusamus nulla sint vero dolor doloribus.
+        Magnam itaque beatae ipsum! Error harum possimus nihil. Soluta illum quas nobis, excepturi dolor animi. Quas, natus a? Ad unde quas ab nisi sint eaque beatae quaerat sequi! In, dignissimos!
+        Fugit quaerat, repellendus blanditiis omnis voluptates maiores asperiores assumenda nostrum! Iure est placeat suscipit blanditiis. Quis dolores, cupiditate nisi voluptatem voluptatum aliquam? Voluptatem mollitia quia quasi eius nesciunt eligendi molestias?
+        Id officia ab, sunt iste illum neque tempora? Architecto, quo aspernatur! Numquam eaque itaque assumenda omnis voluptatem ipsa, odio dignissimos voluptate aperiam deserunt distinctio rerum atque? Autem in dolores et.
+        Earum molestiae ab, voluptates ducimus ullam accusamus excepturi modi, laborum incidunt commodi nostrum possimus. Deserunt libero neque magnam esse sapiente quam magni facilis quaerat corporis, consequatur tempora eveniet iusto consequuntur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit inventore ab dolore temporibus assumenda pariatur molestiae labore quaerat nobis repudiandae sunt illo voluptas odit eum animi, similique necessitatibus maiores hic?
+        Nisi suscipit quibusdam nesciunt vel provident obcaecati dicta tempore eos? Optio maxime non est soluta quos quae? Placeat, eum, ab ipsa odit ullam, laborum id impedit asperiores tenetur quaerat nostrum.
+        Harum, odio tempore illo quos nam similique nemo molestiae assumenda a voluptates voluptas nobis eos quaerat culpa eius dignissimos dicta repellat ipsam, totam ipsa minus placeat libero dolore labore. Laudantium?
+        Quaerat eveniet harum autem rerum dignissimos fugit exercitationem quasi quia eligendi veniam sed reiciendis nobis iste nemo reprehenderit, tempore omnis in, deserunt doloremque vero eius laboriosam distinctio blanditiis? Minima, saepe!
+        Quo, vel rerum? Explicabo itaque quaerat totam possimus, deleniti nisi nesciunt, dignissimos sunt illum cum quisquam voluptatibus at reiciendis veniam, mollitia accusantium rerum? Beatae sed doloremque dolorem quibusdam. Hic, dolorum.
+        Vero modi placeat doloremque maiores! Magnam perferendis doloribus ad impedit et quo dolorem nemo non iusto libero voluptatum, sit illo consequatur officia explicabo velit. Nisi consequuntur autem minima perferendis officia.</p>
     </main>
 </body>
 </html>
